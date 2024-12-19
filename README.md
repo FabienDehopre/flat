@@ -2,6 +2,8 @@
 
 This package is a fork of the original [`flat`](https://github.com/hughsk/flat) library but the JavaScript files have the `.mjs` extension instead of the `.js` extension. This does not change the behavior of the library but it fixes the "jest encountered an unexpected token" issue when executing unit test with jest.
 
+## Original Description
+
 Take a nested Javascript object and flatten it, or unflatten an object with
 delimited keys.
 
