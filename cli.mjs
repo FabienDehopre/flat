@@ -2,7 +2,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import readline from 'node:readline'
-import { flatten } from './index.js'
+import { flatten } from './index.mjs'
 
 const filepath = process.argv.slice(2)[0]
 if (filepath) {

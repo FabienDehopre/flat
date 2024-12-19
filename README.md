@@ -1,4 +1,6 @@
-# flat [![Build Status](https://github.com/hughsk/flat/actions/workflows/main.yml/badge.svg)](https://github.com/hughsk/flat/actions/workflows/main.yml)
+# flat-esm [![Build Status](https://github.com/FabienDehopre/flat/actions/workflows/main.yml/badge.svg)](https://github.com/FabienDehopre/flat/actions/workflows/main.yml)
+
+This package is a fork of the original [`flat`](https://github.com/hughsk/flat) library but the JavaScript files have the `.mjs` extension instead of the `.js` extension. This does not change the behavior of the library but it fixes the "jest encountered an unexpected token" issue when executing unit test with jest.
 
 Take a nested Javascript object and flatten it, or unflatten an object with
 delimited keys.
@@ -6,7 +8,7 @@ delimited keys.
 ## Installation
 
 ``` bash
-$ npm install flat
+$ npm install flat-esm
 ```
 
 ## Methods
@@ -212,13 +214,13 @@ unflatten({
 `flat` is also available as a command line tool. You can run it with [`npx`](https://docs.npmjs.com/cli/v8/commands/npx):
 
 ```sh
-npx flat foo.json
+npx flat-esm foo.json
 ```
 
-Or install the `flat` command globally:
+Or install the `flat-esm` command globally:
  
 ```sh
-npm i -g flat && flat foo.json
+npm i -g flat-esm && flat foo.json
 ```
 
 Accepts a filename as an argument:
