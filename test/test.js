@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, test } from 'node:test'
 import { fileURLToPath } from 'node:url'
-import { flatten, unflatten } from '../index.js'
+import { flatten, unflatten } from '../index.mjs'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const pkg = JSON.parse(readFileSync('./package.json'))

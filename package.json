@@ -1,19 +1,19 @@
 {
-  "name": "flat",
-  "version": "6.0.1",
+  "name": "flat-esm",
+  "version": "1.0.0",
   "type": "module",
   "bin": {
-    "flat": "cli.js"
+    "flat": "cli.mjs"
   },
   "exports": {
     ".": {
       "types": "./index.d.ts",
-      "default": "./index.js"
+      "default": "./index.mjs"
     }
   },
   "files": [
-    "cli.js",
-    "index.js",
+    "cli.mjs",
+    "index.mjs",
     "index.d.ts"
   ],
   "sideEffects": false,
@@ -21,16 +21,16 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "node --test && standard cli.js index.js test/test.js"
+    "test": "node --test && standard cli.mjs index.mjs test/test.js"
   },
   "license": "BSD-3-Clause",
-  "description": "Take a nested Javascript object and flatten it, or unflatten an object with delimited keys",
+  "description": "Take a nested Javascript object and flatten it, or unflatten an object with delimited keys. Fork from (hughsk/flat).",
   "devDependencies": {
     "standard": "^17.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hughsk/flat.git"
+    "url": "git://github.com/FabienDehopre/flat.git"
   },
   "keywords": [
     "flat",
@@ -41,9 +41,9 @@
     "object",
     "nested"
   ],
-  "author": "Hugh Kennedy <hughskennedy@gmail.com> (https://hughsk.io)",
+  "author": "Fabien Dehopré",
   "bugs": {
-    "url": "https://github.com/hughsk/flat/issues"
+    "url": "https://github.com/FabienDehopre/flat/issues"
   },
-  "homepage": "https://github.com/hughsk/flat"
+  "homepage": "https://github.com/FabienDehopre/flat"
 }
